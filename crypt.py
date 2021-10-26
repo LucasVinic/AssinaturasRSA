@@ -22,7 +22,6 @@ def encrypt(message, public_key_n, public_key_e, block_size = 2):
 
   # encrypt all blocks
   encrypted_blocks = [str(pow(block, e, n)) for block in raw_blocks]
-  # print(f'encrypted_blocks {encrypted_blocks}')
 
   # return encrypted message
   return " ".join(encrypted_blocks)
