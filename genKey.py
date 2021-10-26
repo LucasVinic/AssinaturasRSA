@@ -25,4 +25,4 @@ def createKey():
   print(f'chave privada {privKey}.')
   return(publKey, privKey)
 
-createKey()
+# createKey()
