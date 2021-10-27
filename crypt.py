@@ -1,4 +1,5 @@
 import textwrap
+from auxFunct import processString
 
 def encrypt(message, public_key_n, public_key_e, block_size = 2):
   n = int(public_key_n)
@@ -45,5 +46,5 @@ def decrypt(encoded_message, private_key_n, private_key_d, block_size = 2):
       decrypted_block //= 1000
     message += tmp
 
-  # return decrypted message
-  return message
+  # return decrypted message (process to solve empty char stuff when converting to string)
+  return processString(message)
