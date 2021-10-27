@@ -21,8 +21,6 @@ def createKey():
   randNumInv = inverModular(randNum, factorCheck)
   publKey = (npAux, randNum)
   privKey = (npAux, randNumInv)
-  print(f'chave publica {publKey}.')
-  print(f'chave privada {privKey}.')
   return(publKey, privKey)
 
 createKey()
