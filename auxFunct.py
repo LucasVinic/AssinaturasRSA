@@ -1,5 +1,3 @@
-from constants import np1, np2, npAux, factorCheck
-
 # calculo do Máximo Divisor Comum
 def mdc(x, y):
   if (y == 0):

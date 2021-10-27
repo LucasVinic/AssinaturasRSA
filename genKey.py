@@ -13,7 +13,7 @@ def createKey():
 
   # escolhe numeros pseudo-aleatorios ate que encontre um que é primo com o factorCheck
   while True:
-    randNum = random.randrange(2**(keySize-1), 2**keySize)
+    randNum = random.randrange(pow((keySize-1), 2), pow(keySize, 2))
     if (mdc(randNum, factorCheck) == 1):
       break
 
@@ -25,4 +25,4 @@ def createKey():
   print(f'chave privada {privKey}.')
   return(publKey, privKey)
 
-# createKey()
+createKey()
